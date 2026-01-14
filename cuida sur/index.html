@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CUIDA SUR</title>
+
+    <!-- IMPORTANTE para celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("img/fondo.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .titulo {
+            border: 3px solid #7ec8e3;
+            padding: 20px 40px;
+            color: #2b7da3;
+            font-size: 36px;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Servicios */
+        .servicios {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .servicio {
+            border: 2px solid #7ec8e3;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .servicio img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .servicio h3 {
+            color: #2b7da3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f5f5f5;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer h2 {
+            margin-bottom: 5px;
+            color: #2b7da3;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #2b7da3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===================== */
+        /* 📱 ADAPTACIÓN CELULAR */
+        /* ===================== */
+        @media (max-width: 768px) {
+
+            .titulo {
+                font-size: 28px;
+                padding: 15px 25px;
+            }
+
+            .servicios {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .servicio {
+                width: 90%;
+            }
+
+            .servicio img {
+                height: 160px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="titulo">CUIDA SUR</div>
+    </header>
+
+    <!-- Servicios -->
+    <section class="servicios">
+
+        <div class="servicio">
+            <img src="img/geriatria.jpg" alt="Atención geriátrica">
+            <h3>Atención Geriátrica</h3>
+            <p>
+                Servicios de atención geriátrica orientados al cuidado integral,
+                acompañamiento y bienestar de personas mayores.
+            </p>
+        </div>
+
+        <div class="servicio">
+            <img src="img/curaciones.jpg" alt="Curaciones">
+            <h3>Curaciones</h3>
+            <p>
+                Se realizarán curaciones de manera profesional, segura y con
+                enfoque en la recuperación del paciente.
+            </p>
+        </div>
+
+        <div class="servicio">
+            <img src="img/farmacos.jpg" alt="Administración de fármacos">
+            <h3>Administración de Fármacos</h3>
+            <p>
+                Se realizan administraciones de fármacos por vía endovenosa,
+                subcutánea e intramuscular.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>CUIDA SUR</h2>
+        <p>Voxtek</p>
+        <p>
+            Instagram:
+            <a href="https://www.instagram.com/cuida.sur" target="_blank">
+                @cuida.sur
+            </a>
+        </p>
+        <p>
+            WhatsApp: +56 9 7819 0166
+        </p>
+    </footer>
+
+</body>
+</html>
